@@ -1,6 +1,7 @@
 .github/
 docs/
 voicepack/
+template/
 legacy/
 .eslintrc.json
 .lintignore
