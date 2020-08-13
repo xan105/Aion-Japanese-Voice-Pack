@@ -36,8 +36,6 @@ const { getRealm } = require('./aion.js');
 const TEMP = path.join(os.tmpdir() || process.env.TEMP, "Aion Voice Pack");
 
 module.exports.make = async (version, manifest, option, callbackProgress = ()=>{}) => {
-  
- try{
  
   if (typeof option === 'function') {
 		callbackProgress = option
@@ -98,13 +96,10 @@ module.exports.make = async (version, manifest, option, callbackProgress = ()=>{
   
   callbackProgress(`Done! Voice pack files are in "${path.resolve(options.dest)}"`);
   
-  }catch(err){ throw "VOICEPACK_FAILURE" }
-  
 }
 
 async function patch (src, dest) {
 
-  try{
     const map = [    
         {from: "_fdb", to: "_fdd"},
         {from: "_fdc", to: "_fdb"},
@@ -151,9 +146,6 @@ async function patch (src, dest) {
      });
 
      newArchive.writeZip(path.resolve(dest));
-   
-   }catch(err){ throw "VOICEPACK_PATCH_FAILURE" }
-
 }
 
 function addPrefix(string,prefix){
