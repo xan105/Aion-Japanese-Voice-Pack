@@ -13,15 +13,13 @@ You will need Node.js and NPM installed : https://nodejs.org/en/
 Get the script
 ==============
 
-To get everything and its dependencies. In a folder of your choosing open a terminal and 
+To get everything and its dependencies :
 
 ```
-npm install https://github.com/xan105/Aion-Japanese-Voice-Pack
-//or
-npm install xan105/Aion-Japanese-Voice-Pack
+git clone https://github.com/xan105/Aion-Japanese-Voice-Pack
+cd Aion-Japanese-Voice-Pack
+npm i
 ```
-
-Alternatively you can clone this repo and do `npm i`
 
 Configure
 =========
