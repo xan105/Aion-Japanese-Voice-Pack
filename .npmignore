@@ -1,0 +1,13 @@
+.github/
+docs/
+voicepack/
+legacy/
+.eslintrc.json
+.lintignore
+log.txt
+util/pak2zip/build/
+util/pak2zip/build.cmd
+util/pak2zip/dependencies.txt
+util/pak2zip/icon.ico
+util/pak2zip/icon.png
+util/pak2zip/pak2zip.py

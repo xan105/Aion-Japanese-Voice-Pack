@@ -1,0 +1,62 @@
+{
+  "name": "request-zero",
+  "version": "0.2.8",
+  "description": "Simple dependency-free promise based HTTP request client with file download progress.",
+  "type": "module",
+  "main": "request.cjs",
+  "exports": {
+    "import": "./esm.mjs",
+    "require": "./request.cjs"
+  },
+  "browser": "fetch.js",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "lint": "npx eslint --ignore-path .gitignore ./**/*.{cjs,mjs,js}"
+  },
+  "keywords": [
+    "request",
+    "client",
+    "http",
+    "https",
+    "download",
+    "progress",
+    "url",
+    "promise",
+    "torrent",
+    "json",
+    "xml"
+  ],
+  "author": {
+    "name": "Anthony Beaumont",
+    "email": "dev.xan105@outlook.be",
+    "url": "https://xan105.com/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xan105/node-request-zero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xan105/node-request-zero/issues"
+  },
+  "homepage": "https://github.com/xan105/node-request-zero#readme",
+  "peerDependencies": {
+    "webtorrent": "^0.107.17",
+    "xml2js": "^0.4.23"
+  },
+  "peerDependenciesMeta": {
+    "webtorrent": {
+      "optional": true
+    },
+    "xml2js": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "webtorrent": "^0.107.17",
+    "xml2js": "^0.4.23"
+  }
+}
