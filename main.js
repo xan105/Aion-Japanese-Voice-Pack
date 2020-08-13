@@ -46,7 +46,7 @@ try{
   try{
     lastKnownVersion = JSON.parse( await fs.readFile("./aion/version.json", "utf8") );
   }catch{
-    lastKnownVersion = {jpn: 221, kor: 578}; //As of writting. You can safely use 0 instead. It will just take a longer time. Never use a value greater than the actual remote version (infinite loop)
+    lastKnownVersion = {jpn: 221, kor: 582}; //As of writting. You can safely use 0 instead. It will just take a longer time. Never use a value greater than the actual remote version (infinite loop)
   }
   
   debug.log(`Finding Aion ${realm.locale.toUpperCase()} latest version ...`);
