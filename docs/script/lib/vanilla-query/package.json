@@ -1,0 +1,32 @@
+{
+  "name": "@xan105/vanilla-query",
+  "version": "1.0.0",
+  "description": "Like jQuery but with a vanilla flavor",
+  "browser": "vanilla.js",
+  "scripts": {
+    "lint": "npx eslint --ignore-path .gitignore ./**/*.js"
+  },
+  "keywords": [
+    "jQuery",
+    "VanillaJS",
+    "wrapper",
+    "helper"
+  ],
+  "author": {
+    "name": "Anthony Beaumont",
+    "email": "dev.xan105@outlook.be",
+    "url": "https://xan105.com/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xan105/web-vanilla-query.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xan105/web-vanilla-query/issues"
+  },
+  "homepage": "https://github.com/xan105/web-vanilla-query#readme",
+  "devDependencies": {
+    "eslint": "^7.6.0"
+  }
+}
