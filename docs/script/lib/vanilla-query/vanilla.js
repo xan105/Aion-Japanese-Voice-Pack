@@ -53,6 +53,7 @@ const helper = {
   },
   show: function(){
     this.style.display = ""; //restore to whatever it was initially
+    if(getComputedStyle(this).display === "none") this.style.display = "block";
     return this;
   },
   hide: function(){
