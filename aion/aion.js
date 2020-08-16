@@ -49,41 +49,33 @@ module.exports.GetRemoteVersion = async (option, callbackProgress = ()=>{}) => {
     cc: option.cc ?? 4,
     searchStart: option.searchStart ?? 0
   };
-  
-  try{
-    
-    const realm = this.getRealm(options.cc);
-    
-    let version = options.searchStart, status, firstQuery = true;
-    
-    await request.head(realm.url.base); //Try if base url is available before scraping
-    
-    do {
-      status = ( await request.head(realm.url.fileInfo(version), {maxRetry: 3}) ).code;
-      callbackProgress(realm.cc,version,status);
-      if (status == 200) version++;
-      else 
-      {
-         if (firstQuery) 
-         {   
-            version++;
-            do {
-                status = ( await request.head(realm.url.fileInfo(version), {maxRetry: 3}) ).code;
-                callbackProgress(realm.cc,version,status);
-                version++;  
-            }while ( status == 404);   
-         } else { version--; } 
-              
-     }
-     firstQuery = false;
-    }while(status == 200);
 
-    return version;
-  
-  }catch(err){
-    throw "GET_REMOTE_VERSION_FAILURE";
-  }
-  
+  const realm = this.getRealm(options.cc);
+    
+  let version = options.searchStart, status, firstQuery = true;
+    
+  await request.head(realm.url.base); //Try if base url is available before scraping
+    
+  do {
+    status = ( await request.head(realm.url.fileInfo(version), {maxRetry: 3}) ).code;
+    callbackProgress(realm.cc,version,status);
+    if (status == 200) version++;
+    else 
+    {
+       if (firstQuery) 
+       {   
+          version++;
+          do {
+              status = ( await request.head(realm.url.fileInfo(version), {maxRetry: 3}) ).code;
+              callbackProgress(realm.cc,version,status);
+              version++;  
+          }while ( status == 404);   
+       } else { version--; }         
+    }
+    firstQuery = false;
+  }while(status == 200);
+
+  return version;
 }
 
 module.exports.GetManifest = async (version, option = {}) => {
