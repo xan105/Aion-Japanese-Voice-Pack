@@ -198,6 +198,10 @@ _Not all features are available._
 
 + `request(url string, [option] object)`<br/>
     Make a request by default 'GET' use option {method: GET HEAD etc} to change it.<br/>
+    
++ `request.getJson`
++ `request.head`
++ `request.get`
 
 Has 2 more options than the Node version :
 
@@ -209,7 +213,7 @@ Has 2 more options than the Node version :
 ```js
 //Example 
 
-import request from 'request-zero';
+import request from 'https://unpkg.com/request-zero/fetch.js'
 
 request("some/url").then((res) => {
     console.log(res.body);

@@ -195,6 +195,28 @@ export default function request(href,option = {}){
   });
 }
 
+export function get(url, option = {} ){
+  option.method = "GET";
+  return request(url, option);
+}
+
+export function head(url, option = {} ){
+  option.method = "HEAD";
+  return request(url, option);
+}
+
+export async function getJson(url, option = {} ){
+
+  if (!option.headers) option.headers = {};
+  if (!option.headers['Accept']) option.headers['Accept'] = 'application/json, application/json;indent=2';
+  option.method = "GET";
+
+  const { body : data } = await request(url, option);
+  const json = JSON.parse(data);
+  return json;
+
+}
+
 function parseHeaders(headers){
   let response = {};
   headers.forEach((value, name) => { response[name] = value });
