@@ -8,7 +8,7 @@
 
 This is a Node.js script _inspired by / copied from_ my previous work with my alternative [Aion Launcher](https://github.com/xan105/Aion-Launcher) to fetch audio files directly from the game update server.
 
-You will need Node.js and NPM installed : https://nodejs.org/en/
+You will need Node.js (≥ 14) and NPM installed : https://nodejs.org/en/
 
 Get the script
 ==============

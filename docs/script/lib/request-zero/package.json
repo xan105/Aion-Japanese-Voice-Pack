@@ -1,27 +1,27 @@
 {
-  "_from": "request-zero@latest",
-  "_id": "request-zero@0.2.8",
+  "_from": "request-zero@0.2.9",
+  "_id": "request-zero@0.2.9",
   "_inBundle": false,
-  "_integrity": "sha512-7bTJobtLMfM7rKOIMU5Tj4y47+BS6rofv9QQMhucimI9BGwk7V79BzV1j8aTPS13Qbhq1VBGDB5hCsimKw9vow==",
+  "_integrity": "sha512-wDPTY5QmgVd9PgFbivp2GYM1ezs2xSqu6Gn36YbYLMS/hcDWvAIWez7VEc+kJFRQJxLcOU/GdlL+9Dj79+XIzg==",
   "_location": "/request-zero",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "request-zero@latest",
+    "raw": "request-zero@0.2.9",
     "name": "request-zero",
     "escapedName": "request-zero",
-    "rawSpec": "latest",
+    "rawSpec": "0.2.9",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "0.2.9"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/request-zero/-/request-zero-0.2.8.tgz",
-  "_shasum": "0575cf6a17029cd6ab0962e713d6cc9ea94bd781",
-  "_spec": "request-zero@latest",
+  "_resolved": "https://registry.npmjs.org/request-zero/-/request-zero-0.2.9.tgz",
+  "_shasum": "3179da4f7f7a791770f312ad5698cef21ecf5215",
+  "_spec": "request-zero@0.2.9",
   "_where": "D:\\Documents\\GitHub\\Aion-Japanese-Voice-Pack",
   "author": {
     "name": "Anthony Beaumont",
@@ -84,5 +84,5 @@
     "lint": "npx eslint --ignore-path .gitignore ./**/*.{cjs,mjs,js}"
   },
   "type": "module",
-  "version": "0.2.8"
+  "version": "0.2.9"
 }
