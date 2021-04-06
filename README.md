@@ -10,6 +10,10 @@ This is a Node.js script _inspired by / copied from_ my previous work with my al
 
 You will need Node.js (≥ 14) and NPM installed : https://nodejs.org/en/
 
+<p align="center">
+  <img src="https://github.com/xan105/Aion-Japanese-Voice-Pack/raw/master/screenshot/aion%20voice%20pack.png">
+</p>
+
 Get the script
 ==============
 
