@@ -1,0 +1,65 @@
+{
+  "name": "@xan105/request",
+  "version": "0.3.3",
+  "description": "Simple dependency-free promise based HTTP request client with file download progress.",
+  "type": "module",
+  "main": "./lib/request.cjs",
+  "exports": {
+    "import": "./lib/esm.mjs",
+    "require": "./lib/request.cjs"
+  },
+  "browser": "./lib/fetch.js",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "lint": "npx eslint --ignore-path .gitignore ./**/*.{cjs,mjs,js}",
+    "pretty": "npx prettier --write ./**/*.{cjs,mjs,js}"
+  },
+  "keywords": [
+    "request",
+    "client",
+    "http",
+    "https",
+    "download",
+    "progress",
+    "url",
+    "promise",
+    "torrent",
+    "json",
+    "xml"
+  ],
+  "author": {
+    "name": "Anthony Beaumont",
+    "email": "dev.xan105@outlook.be",
+    "url": "https://xan105.com/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xan105/node-request.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xan105/node-request/issues"
+  },
+  "homepage": "https://github.com/xan105/node-request#readme",
+  "peerDependencies": {
+    "webtorrent": "^0.108.6",
+    "xml2js": "^0.4.23"
+  },
+  "peerDependenciesMeta": {
+    "webtorrent": {
+      "optional": true
+    },
+    "xml2js": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^6.15.0",
+    "prettier": "2.2.0",
+    "webtorrent": "^0.108.6",
+    "xml2js": "^0.4.23"
+  }
+}

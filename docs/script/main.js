@@ -1,4 +1,4 @@
-import request from "./lib/request-zero/fetch.js"
+import request from "./lib/request/fetch.js"
 import { DOMReady, select } from "./lib/vanilla-query/vanilla.js"
 
 DOMReady(()=>{

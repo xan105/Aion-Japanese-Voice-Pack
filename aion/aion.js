@@ -27,7 +27,7 @@ SOFTWARE.
 const os = require('os');
 const path = require('path');
 const fs = require('@xan105/fs');
-const request = require('request-zero');
+const request = require('@xan105/request');
 const parseTorrent = require('parse-torrent');
 const unzip = require('../util/un7z/un7z.js');
 const realms = require('./cc.js');
