@@ -1,7 +1,7 @@
 Aion Japanese Voice Pack
 ========================
 
-Based on Aion JPN client v221
+Based on Aion JPN client v252
 
 - Voice order patched for Aion NA/EU
 - Prefixed with "z" to bypass official launcher file verification and Aion file order loading.
@@ -11,4 +11,4 @@ Based on Aion JPN client v221
 Enjoy Nyerk.
 
 https://github.com/xan105/Aion-Japanese-Voice-Pack
-2012-2020 xan105
+2012-2021 xan105
